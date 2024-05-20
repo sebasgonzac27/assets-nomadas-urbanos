@@ -15,6 +15,16 @@
   src: url(@/assets/fonts/FontsFree-Net-bonbon-regular.ttf);
 }
 
+@font-face {
+  font-family: 'BebasNeue Regular';
+  src: url(@/assets/fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'FjallaOne Regular';
+  src: url(@/assets/fonts/FjallaOne-Regular.ttf);
+}
+
 body {
   font-family: 'Inter Variable', sans-serif;
   font-size: 16px;
