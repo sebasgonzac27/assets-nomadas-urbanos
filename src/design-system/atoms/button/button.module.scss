@@ -1,0 +1,17 @@
+@use '@/styles/variables' as *;
+
+.button {
+  background-color: $orange;
+  color: $white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: $font-semibold;
+  cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+
+  }
+}
