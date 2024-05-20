@@ -3,12 +3,12 @@ import { NavLink } from 'react-router-dom'
 
 const routes = [
   {
-    path: '/logo-creator',
-    name: 'Logo',
-  },
-  {
     path: '/flayer-creator',
     name: 'Flayer',
+  },
+  {
+    path: '/logo-creator',
+    name: 'Logo',
   },
 ]
 

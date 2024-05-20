@@ -4,7 +4,7 @@ import { FlayerCreator, LogoCreator } from '@/pages'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Navigate to="/logo-creator" replace={true} />,
+    element: <Navigate to="/flayer-creator" replace={true} />,
   },
   {
     path: '/logo-creator',
