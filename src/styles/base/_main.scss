@@ -17,12 +17,12 @@
 
 @font-face {
   font-family: 'Bahnschrift';
-  src: url(@/assets/fonts/Bahnschrift.ttf) format('ttf');
+  src: url('fonts/Bahnschrift.ttf') format('ttf');
 }
 
 @font-face {
   font-family: 'Fjalla One Regular';
-  src: url(@/assets/fonts/FjallaOne-Regular.ttf) format('ttf');
+  src: url('fonts/FjallaOne-Regular.ttf') format('ttf');
 }
 
 body {
