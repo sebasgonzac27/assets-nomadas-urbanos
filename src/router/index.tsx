@@ -1,7 +1,7 @@
-import { createBrowserRouter, Navigate } from 'react-router-dom'
+import { createHashRouter, Navigate } from 'react-router-dom'
 import { FlayerCreator, LogoCreator } from '@/pages'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Navigate to="/flayer-creator" replace={true} />,
