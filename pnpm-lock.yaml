@@ -11,9 +11,6 @@ importers:
       '@fontsource-variable/inter':
         specifier: ^5.0.18
         version: 5.0.18
-      '@types/node':
-        specifier: ^20.12.12
-        version: 20.12.12
       html-to-image:
         specifier: ^1.11.11
         version: 1.11.11
@@ -1544,6 +1541,7 @@ snapshots:
   '@types/node@20.12.12':
     dependencies:
       undici-types: 5.26.5
+    optional: true
 
   '@types/prop-types@15.7.12': {}
 
@@ -2234,7 +2232,8 @@ snapshots:
 
   typescript@5.4.5: {}
 
-  undici-types@5.26.5: {}
+  undici-types@5.26.5:
+    optional: true
 
   update-browserslist-db@1.0.16(browserslist@4.23.0):
     dependencies:
