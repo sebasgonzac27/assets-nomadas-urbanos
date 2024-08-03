@@ -31,7 +31,7 @@
   width: 80%;
   height: auto;
   aspect-ratio: 1/1;
-  box-shadow: 0 0 0 clamp(2px, .6vw, 4px) $black;
+  border: clamp(2px, .6vw, 4px) solid $black;
   border-radius: 50%;
   background-color: $white;
 
