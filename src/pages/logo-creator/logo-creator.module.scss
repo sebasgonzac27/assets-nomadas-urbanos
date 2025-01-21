@@ -1,7 +1,8 @@
-@use '@/styles/variables' as *;
+@use "@/styles/variables" as *;
 
 .logo-creator {
   width: 100%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,12 +12,10 @@
 
   &__form {
     width: 100%;
-    max-width: 500px;
   }
 
   &__render {
     width: 100%;
-    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +30,7 @@
   width: 80%;
   height: auto;
   aspect-ratio: 1/1;
-  border: clamp(2px, .6vw, 4px) solid $black;
+  border: clamp(2px, 0.6vw, 4px) solid $black;
   border-radius: 50%;
   background-color: $white;
 
@@ -39,7 +38,7 @@
     align-self: center;
     width: 95%;
     height: 95%;
-    box-shadow: 0 0 0 clamp(2px, .6vw, 4px) $black;
+    box-shadow: 0 0 0 clamp(2px, 0.6vw, 4px) $black;
     border-radius: 50%;
     position: relative;
   }
@@ -51,7 +50,7 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: clamp(12px, 9vw, 48px);
-    font-family: 'Bonbon Regular';
+    font-family: "Bonbon Regular";
     width: 100%;
   }
 

@@ -1,0 +1,35 @@
+@use '@/styles/variables' as *;
+
+.select {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    font-size: 1rem;
+    font-weight: $font-medium;
+    margin-bottom: 8px;
+  }
+
+  &__field {
+    padding: 8px;
+    border: none;
+    background-color: $input-bg;
+    border-radius: 4px;
+    font-size: 1rem;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px $orange;
+    }
+
+    &::selection {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+
+  &__error {
+    color: $red;
+    font-size: 0.8rem;
+  }
+}
