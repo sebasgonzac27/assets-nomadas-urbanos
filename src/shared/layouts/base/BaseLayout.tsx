@@ -1,6 +1,6 @@
 import { Navbar } from '@/shared/components';
 import React from 'react';
-import styles from './base.module.scss';
+import styles from './BaseLayout.module.scss';
 
 interface Props {
   children: React.ReactNode;

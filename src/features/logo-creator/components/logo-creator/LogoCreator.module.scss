@@ -1,4 +1,4 @@
-@use "@/styles/variables" as *;
+@use '@/styles/variables' as *;
 
 .logo-creator {
   width: 100%;
@@ -50,7 +50,7 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: clamp(12px, 9vw, 48px);
-    font-family: "Bonbon Regular";
+    font-family: 'Bonbon Regular', sans-serif;
     width: 100%;
   }
 

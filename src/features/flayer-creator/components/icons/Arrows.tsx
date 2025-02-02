@@ -1,0 +1,15 @@
+export default function Arrows() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.0"
+      viewBox="2.2 0.2 184.2 100"
+      style={{ fill: 'currentColor' }}
+    >
+      <path
+        d="M2.2.2v26l31 24-31 24v26l64.6-50L2.2.2zm1.3 74.6 31.8-24.6L3.5 25.5V2.8l61.2 47.3L3.5 97.5V74.8zM62 .2v26l31 24-31 24v26l64.6-50L62 .2zm1.3 74.6 31.8-24.6-31.8-24.7V2.8l61.2 47.3-61.2 47.4V74.8zM121.8.2v26l31 24-31 24v26l64.6-50-64.6-50zm1.3 74.6 31.8-24.6-31.8-24.6V2.8l61.2 47.3-61.2 47.3V74.8z"
+        style={{ fill: 'currentColor' }}
+      />
+    </svg>
+  );
+}

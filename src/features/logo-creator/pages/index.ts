@@ -1,1 +1,1 @@
-export * from './LogoCreatorPage';
+export { default as LogoCreator } from './LogoCreator';

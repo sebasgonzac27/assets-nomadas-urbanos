@@ -1,22 +1,20 @@
 export interface DB {
-  clubs: Club[];
+  countries: Country[];
   typesOfEvents: TypeOfEvent[];
 }
 
-export interface Club {
+interface Base {
   id: number;
   name: string;
+}
+
+export interface Country extends Base {
   logo: string;
   teams: Team[];
 }
 
-export interface Team {
-  id: number;
-  name: string;
-}
+export interface Team extends Base {}
 
-export interface TypeOfEvent {
-  id: number;
-  name: string;
+export interface TypeOfEvent extends Base {
   color: string;
 }

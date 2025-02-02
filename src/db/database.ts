@@ -1,10 +1,10 @@
 import { DB } from './database.interface';
 export const db: DB = {
-  clubs: [
+  countries: [
     {
       id: 1,
-      name: 'Nómadas Urbanos Colombia',
-      logo: 'nomadas-urbanos-colombia.png',
+      name: 'Colombia',
+      logo: 'colombia-logo.png',
       teams: [
         {
           id: 1,
@@ -22,11 +22,12 @@ export const db: DB = {
     },
     {
       id: 2,
-      name: 'Nómadas Urbanos Costa Rica',
-      logo: 'nomadas-urbanos-costa-rica.png',
+      name: 'Costa Rica',
+      logo: 'costa-rica-logo.png',
       teams: [],
     },
   ],
+
   typesOfEvents: [
     {
       id: 1,

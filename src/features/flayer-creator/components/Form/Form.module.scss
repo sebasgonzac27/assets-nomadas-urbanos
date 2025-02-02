@@ -1,0 +1,6 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: clamp(300px, 100%, 20vw);
+}

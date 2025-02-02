@@ -1,1 +1,1 @@
-export * from './FlayerCreatorPage';
+export { default as FlayerCreator } from './FlayerCreator/FlayerCreator';
