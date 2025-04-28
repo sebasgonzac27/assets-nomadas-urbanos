@@ -1,6 +1,7 @@
 @use 'scss-reset';
 @use 'colors' as colors;
 @use 'fonts' as fonts;
+@forward '@fontsource-variable/inter';
 
 @font-face {
   font-family: 'Bonbon Regular';

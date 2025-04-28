@@ -2,6 +2,7 @@
 @use 'breakpoints' as breakpoints;
 @use 'mixins' as mixins;
 @use 'fonts' as fonts;
+@forward '@fontsource-variable/montserrat';
 
 .flayer {
   width: 700px;

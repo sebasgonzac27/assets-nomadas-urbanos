@@ -4,7 +4,6 @@ import {ArrowsComponent} from '../arrows/arrows.component';
 import {CrossComponent} from '../cross/cross.component';
 import {CalendarComponent} from '../calendar/calendar.component';
 import {MapPinComponent} from '../map-pin/map-pin.component';
-import '@fontsource-variable/montserrat';
 import {DatetimePipe} from '../../pipes/datetime.pipe';
 
 @Component({
