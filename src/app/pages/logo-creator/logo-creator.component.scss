@@ -1,0 +1,14 @@
+.logo-creator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 30vw;
+  height: auto;
+  padding: 10px;
+}

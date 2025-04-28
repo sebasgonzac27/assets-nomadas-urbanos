@@ -1,0 +1,139 @@
+@use 'colors' as colors;
+@use 'breakpoints' as breakpoints;
+@use 'mixins' as mixins;
+@use 'fonts' as fonts;
+
+.flayer {
+  width: 700px;
+  aspect-ratio: 1 / 1;
+  background-color: colors.$gray-800;
+  position: relative;
+  font-family: 'Montserrat Variable', sans-serif;
+
+  @include mixins.scale-on-breakpoint(
+    $breakpoint: breakpoints.$xlarge,
+    $scale: 1
+  );
+
+  @include mixins.scale-on-breakpoint(
+    $breakpoint: breakpoints.$large,
+    $scale: 0.9
+  );
+
+  @include mixins.scale-on-breakpoint(
+    $breakpoint: breakpoints.$medium,
+    $scale: 0.7
+  );
+
+  @include mixins.scale-on-breakpoint(
+    $breakpoint: breakpoints.$small,
+    $scale: 0.5
+  );
+
+  &__background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.15;
+  }
+
+  &__arrows {
+    position: absolute;
+    width: 13%;
+
+    $position: 5%;
+
+    &--top {
+      top: $position;
+      right: $position;
+    }
+
+    &--bottom {
+      bottom: $position;
+      left: $position;
+    }
+  }
+
+  &__crosses {
+    position: absolute;
+    width: 3%;
+    right: 5%;
+    bottom: 6%;
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__logo {
+    width: 18%;
+    height: auto;
+  }
+
+  &__primary_text {
+    display: flex;
+    flex-direction: column;
+    font-weight: fonts.$font-weight-bold;
+    line-height: 2.5rem;
+  }
+
+  &__type {
+    font-size: 2.8rem;
+    color: white;
+  }
+
+  &__place {
+    font-size: 1.5rem;
+  }
+
+  &__description {
+    font-size: 1rem;
+    font-weight: fonts.$font-weight-bold;
+    text-align: center;
+    line-height: 1.6rem;
+    color: white;
+  }
+
+  &__info {
+    padding: 1rem;
+    border-style: dashed;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: fonts.$font-weight-medium;
+  }
+
+  &__info_item {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+
+    p {
+      color: white;
+    }
+  }
+
+  &__slogan {
+    font-weight: fonts.$font-weight-bold;
+    margin: 0 auto;
+    max-width: 60%;
+    font-size: 0.6rem;
+    text-wrap: wrap;
+    text-align: center;
+    color: white;
+  }
+}

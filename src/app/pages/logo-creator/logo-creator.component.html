@@ -1,0 +1,10 @@
+<section class="logo-creator">
+  <div class="field">
+    <label for="name">Nombre del club:</label>
+    <input [(ngModel)]="name" placeholder="Ingresa aquí el nombre del club" id="name"/>
+  </div>
+  <app-logo class="logo" [name]="name || 'Colombia'"/>
+  <button (click)="downloadLogo()">
+    Descargar
+  </button>
+</section>

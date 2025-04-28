@@ -1,0 +1,7 @@
+@use '../styles/sizes' as sizes;
+
+.main {
+  padding: 2rem 0;
+  max-width: sizes.$window-size-default;
+  margin: 0 auto;
+}

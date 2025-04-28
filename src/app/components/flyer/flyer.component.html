@@ -1,0 +1,55 @@
+<div class="flayer" [style]="{color: color}">
+  <img
+    class="flayer__background"
+    [ngSrc]="imageUrl || 'https://media-public.canva.com/mrgTY/MAFkyNmrgTY/1/s2.jpg'"
+    alt="Imagen fondo"
+    width="1600"
+    height="1067"
+    priority="priority"
+  />
+  <div
+    class="flayer__arrows flayer__arrows--top"
+  >
+    <app-arrows/>
+  </div>
+  <div
+    class="flayer__arrows flayer__arrows--bottom"
+  >
+    <app-arrows/>
+  </div>
+  <div class="flayer__crosses">
+    <app-cross/>
+    <app-cross/>
+    <app-cross/>
+  </div>
+  <div class="flayer__content">
+    <img
+      class="flayer__logo"
+      ngSrc="/images/colombia-logo.png"
+      alt="colombia-logo"
+      width="1000"
+      height="1000"
+    />
+    <div class="flayer__primary_text">
+      <h1 class="flayer__type">{{ type }}</h1>
+      <p class="flayer__place">{{ location }}</p>
+    </div>
+    <p class="flayer__description">{{ description }}</p>
+
+    <div class="flayer__info">
+      <div class="flayer__info_item">
+        <app-calendar/>
+        <p>{{ date | datetime}}</p>
+      </div>
+      <div class="flayer__info_item">
+        <app-map-pin/>
+        <p>{{ place }}</p>
+      </div>
+    </div>
+    <footer>
+      <p class="flayer__slogan">
+        Amor por las motos, pasión por la aventura
+      </p>
+    </footer>
+  </div>
+</div>

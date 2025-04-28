@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'scss-reset';
+@use 'colors' as colors;
+@use 'fonts' as fonts;
+
+@font-face {
+  font-family: 'Bonbon Regular';
+  src: url('/fonts/Bonbon-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Inter Variable', sans-serif;
+}
+
+label {
+  font-weight: fonts.$font-weight-bold;
+  margin-bottom: 4px;
+}
+
+input, select {
+  border: colors.$black 1px solid;
+  padding: 4px 8px;
+  border-radius: 4px;
+
+  &:focus {
+    outline: none;
+    border-color: colors.$orange;
+  }
+}
+
+button {
+  background-color: colors.$orange;
+  color: colors.$white;
+  padding: 8px 16px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: colors.$orange-dark;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}

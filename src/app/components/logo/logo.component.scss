@@ -1,0 +1,41 @@
+@use 'colors' as colors;
+
+.render {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  border: clamp(2px, .6vw, 4px) solid colors.$black;
+  border-radius: 50%;
+  background-color: colors.$white;
+
+  &__inset {
+    align-self: center;
+    width: 95%;
+    height: 95%;
+    box-shadow: 0 0 0 clamp(2px, .6vw, 4px) colors.$black;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  &__text {
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(12px, 10vw, 60px);
+    font-family: 'Bonbon Regular', serif;
+    width: 100%;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 1%;
+    width: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

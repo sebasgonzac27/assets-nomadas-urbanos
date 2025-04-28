@@ -1,0 +1,32 @@
+<header class="header">
+  <div class="header__content">
+    <div class="brand">
+      <img
+        class="brand__logo"
+        ngSrc="/images/colombia-logo.png"
+        alt="Logo Nómadas Urbanos"
+        width="1000"
+        height="1000"
+      />
+      <div>
+        <h1 class="brand__title">Nómadas Urbanos Colombia</h1>
+        <p class="brand__description">Creador de recursos para el club y los eventos.</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <ul class="nav__list">
+        @for (link of links; track $index) {
+          <li class="nav__item">
+            <a
+              class="nav__link"
+              routerLinkActive="nav__link--active"
+              [routerLink]="link.route"
+            >
+              {{ link.label }}
+            </a>
+          </li>
+        }
+      </ul>
+    </nav>
+  </div>
+</header>

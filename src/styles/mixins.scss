@@ -1,0 +1,10 @@
+@mixin scale-on-breakpoint($breakpoint, $scale) {
+  @media (max-width: $breakpoint) {
+    transform: scale($scale);
+
+    $scale-difference: (1 - $scale) * 100%;
+    $negative-margin: $scale-difference / 2;
+
+    margin: -#{$negative-margin};
+  }
+}

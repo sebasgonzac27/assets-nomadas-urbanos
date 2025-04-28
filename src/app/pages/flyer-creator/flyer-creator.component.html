@@ -1,0 +1,46 @@
+<section class="input-data">
+  <div class="field">
+    <label for="club">Team:</label>
+    <select [(ngModel)]="values.club" name="club">
+      @for (club of clubs; track club.id) {
+        <option value="{{ club.id }}">{{ club.name }}</option>
+      }
+    </select>
+  </div>
+  <div class="field">
+    <label for="name">Nombre del evento:</label>
+    <input type="text" placeholder="Ingrese aquí el nombre del evento" name="name" [(ngModel)]="values.name"/>
+  </div>
+  <div class="field">
+    <label for="typeOfEvent">Tipo de evento:</label>
+    <select [(ngModel)]="values.typeOfEvent" name="typeOfEvent">
+      @for (typeOfEvent of typeOfEvents; track typeOfEvent.id) {
+        <option value="{{ typeOfEvent.id }}">{{ typeOfEvent.name }}</option>
+      }
+    </select>
+  </div>
+  <div class="field">
+    <label for="date">Fecha y hora del encuentro:</label>
+    <input type="datetime-local" name="date" [(ngModel)]="values.date"/>
+  </div>
+  <div class="field">
+    <label for="place">Lugar de encuentro:</label>
+    <input type="text" placeholder="Ingrese aquí el lugar del encuentro" name="place" [(ngModel)]="values.place"/>
+  </div>
+  <div class="field">
+    <label for="image">Selecciona la imagen de fondo:</label>
+    <input type="file" name="image" accept="image/*" (change)="onImageSelected($event)"/>
+  </div>
+  <button (click)="onDownload()">Descargar</button>
+</section>
+<section id="flyer-canvas">
+  <app-flyer
+    [color]="color"
+    [type]="type"
+    [location]="location"
+    [description]="values.name"
+    [date]="values.date"
+    [place]="values.place"
+    [image]="image"
+  />
+</section>
