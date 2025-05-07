@@ -1,9 +1,17 @@
 <section class="input-data">
   <div class="field">
-    <label for="club">Team:</label>
-    <select [(ngModel)]="values.club" name="club">
-      @for (club of clubs; track club.id) {
-        <option value="{{ club.id }}">{{ club.name }}</option>
+    <label for="country">País:</label>
+    <select [(ngModel)]="country" name="country">
+      @for (country of countries; track country.id) {
+        <option value="{{ country.id }}">{{ country.name }}</option>
+      }
+    </select>
+  </div>
+  <div class="field">
+    <label for="team">Team:</label>
+    <select [(ngModel)]="values.team" name="team">
+      @for (team of teams; track team.id) {
+        <option value="{{ team.id }}">{{ team.name }}</option>
       }
     </select>
   </div>
@@ -35,6 +43,7 @@
 </section>
 <section id="flyer-canvas">
   <app-flyer
+    [logoUrl]="logoUrl"
     [color]="color"
     [type]="type"
     [location]="location"
