@@ -6,6 +6,7 @@
 
   @media (max-width: breakpoints.$medium) {
     grid-template-columns: 1fr;
+    gap: 60px;
   }
 }
 
