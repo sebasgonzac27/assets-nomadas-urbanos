@@ -32,8 +32,8 @@ export class FakeDbService implements InMemoryDbService {
           },
           {
             id: 4,
-            name: 'Barranquilla',
-            slug: 'barranquilla',
+            name: 'Boyacá',
+            slug: 'boyaca',
           },
           {
             id: 5,
@@ -49,6 +49,26 @@ export class FakeDbService implements InMemoryDbService {
             id: 7,
             name: 'Armenia',
             slug: 'armenia',
+          },
+          {
+            id: 8,
+            name: 'Villavicencio',
+            slug: 'villavicencio',
+          },
+          {
+            id: 9,
+            name: 'Santa Marta',
+            slug: 'santa-marta',
+          },
+          {
+            id: 10,
+            name: 'Barranquilla',
+            slug: 'barranquilla',
+          },
+          {
+            id: 11,
+            name: 'Manizales',
+            slug: 'manizales',
           }
         ]
       },
