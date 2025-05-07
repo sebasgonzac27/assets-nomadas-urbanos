@@ -1,6 +1,7 @@
 @use 'fonts' as fonts;
 @use 'colors' as colors;
 @use 'sizes' as sizes;
+@use 'breakpoints' as breakpoints;
 
 .header {
   border-bottom: colors.$gray-200 solid 1px;
@@ -12,6 +13,12 @@
     padding: 10px;
     max-width: sizes.$window-size-default;
     margin: 0 auto;
+
+    @media (max-width: breakpoints.$medium) {
+      flex-direction: column;
+      justify-content: center;
+    }
+    
   }
 }
 
