@@ -47,6 +47,12 @@ export class FlyerCreatorComponent implements OnInit {
       this.typeOfEvents = typeOfEvents;
       this.values.typeOfEvent = typeOfEvents[0].id.toString();
     });
+    this.values = {
+      ...this.values,
+      date: this.getLocalDatetimeString(new Date()),
+      place: 'Estadio El Campín',
+      name: 'Ruta al saldo del Tequendama',
+    }
   }
 
   onImageSelected(event: Event) {
@@ -62,6 +68,16 @@ export class FlyerCreatorComponent implements OnInit {
     if (flyer) {
       this.htmlToImageService.exportToPng(flyer, 'flyer.png', { quality: 1 });
     }
+  }
+
+  getLocalDatetimeString(date: Date): string {
+    const pad = (n: number) => n.toString().padStart(2, '0');
+    const yyyy = date.getFullYear();
+    const mm = pad(date.getMonth() + 1);
+    const dd = pad(date.getDate());
+    const hh = pad(date.getHours());
+    const mi = pad(date.getMinutes());
+    return `${yyyy}-${mm}-${dd}T${hh}:${mi}`;
   }
 
   get color() {
