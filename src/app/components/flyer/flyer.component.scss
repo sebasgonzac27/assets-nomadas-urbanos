@@ -99,7 +99,7 @@
   }
 
   &__description {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: fonts.$font-weight-bold;
     text-align: center;
     line-height: 1.6rem;
@@ -109,7 +109,7 @@
   &__info {
     padding: 1rem;
     border-style: dashed;
-    border-width: 1px;
+    border-width: 2px;
     border-radius: 10px;
     border-color: white;
     display: flex;

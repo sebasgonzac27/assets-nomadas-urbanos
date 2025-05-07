@@ -20,6 +20,7 @@ import {DatetimePipe} from '../../pipes/datetime.pipe';
   styleUrl: './flyer.component.scss'
 })
 export class FlyerComponent implements OnChanges {
+  @Input() logoUrl = '';
   @Input() color = '';
   @Input() type = '';
   @Input() location = '';
