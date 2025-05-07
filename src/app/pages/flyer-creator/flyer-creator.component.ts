@@ -53,6 +53,7 @@ export class FlyerCreatorComponent implements OnInit {
       place: 'Estadio El Campín',
       name: 'Ruta al saldo del Tequendama',
     }
+    this.loadDefaultImage('/images/background.png');
   }
 
   onImageSelected(event: Event) {
@@ -64,7 +65,9 @@ export class FlyerCreatorComponent implements OnInit {
   }
 
   onDownload() {
-    const flyer = document.getElementById('flyer-canvas') as HTMLElement;
+    const flyer = document.querySelector('#flyer-canvas') as HTMLElement;
+
+    console.log(flyer);
     if (flyer) {
       this.htmlToImageService.exportToPng(flyer, 'flyer.png', { quality: 1 });
     }
@@ -78,6 +81,16 @@ export class FlyerCreatorComponent implements OnInit {
     const hh = pad(date.getHours());
     const mi = pad(date.getMinutes());
     return `${yyyy}-${mm}-${dd}T${hh}:${mi}`;
+  }
+
+  loadDefaultImage(path: string) {
+    fetch(path)
+      .then(res => res.blob())
+      .then(blob => {
+        const file = new File([blob], 'default.png', { type: blob.type });
+        this.image = file;
+      })
+      .catch(err => console.error('Error cargando imagen por defecto:', err));
   }
 
   get color() {
