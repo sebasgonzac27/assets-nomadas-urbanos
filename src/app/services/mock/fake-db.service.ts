@@ -115,12 +115,12 @@ export class FakeDbService implements InMemoryDbService {
       {
         id: 1,
         name: 'Rodada',
-        color: '#d50000',
+        color: '#ff4040',
       },
       {
         id: 2,
         name: 'Viernes Nómada',
-        color: '#1300e2',
+        color: '#00bbff',
       },
       {
         id: 3,
